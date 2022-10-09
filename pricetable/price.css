@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+*{
+    padding:0;
+    margin:0;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Poppins',san-serif;
+}
+
+.price-section{
+    width:75vw;
+    height: 70vh;
+    margin:15vh auto;
+    display:flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+[class*='box']{
+    position: relative;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    width: 23.9vw;
+    height:67vh;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap:30px;
+}
+
+[class*='box'] h1{
+    background:rgb(1,192,161);
+    width: 100%;
+    height: 2vh;
+    color: white;
+    font-weight: 300;
+    text-align: center;
+    padding: 1.2rem 0;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.box2 h1{
+    background-color: rgb(255,87,28) !important;
+}
+
+.box3 h1{
+    background-color: rgb(255,49,114) !important;
+}
+
+.description{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    gap:15px;
+} 
+.price{
+    font-size: 2em;
+    color: #5D5D5D;
+    text-align: center;
+}
+.price span{
+    font-size: 12px;
+}
+.description .price span{
+    display: block;
+    margin-top: -10px;
+}
+
+.description img{
+    width:20px;
+    height:20px;
+}
+.description ul{
+    line-height: 2.3em;
+}
+
+.description li{
+    gap:15px;
+    display: flex;
+    align-items: center;
+    font-size: 13px;
+    font-weight: lighter;
+    color: rgba(0, 0, 0, 0.692);
+    list-style-image: url('/images/icon/cross.png');
+   
+}
+.select-btn{
+    background-color:rgb(0,16,32);
+    color: white;
+    width:85%;
+    margin:auto;
+    padding:1rem  0;
+    text-align: center;
+}
+.select-btn:hover{
+    opacity: 0.8;
+}
+.select-btn:active{
+    background-color: rgb(1, 6, 11);
+}
+
+@media screen and (max-width: 760px){
+    .price-section{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    [class*='box']{
+        width: 100%;
+        padding-bottom:2rem;
+    }
+    .description li{
+        font-size: 1rem;
+    }
+}
