@@ -121,7 +121,7 @@ nav a:hover {
 }
 
 .welcome {
-  background: url('john-fornander-TAZoUmDqzXk-unsplash.jpg') #17171794;
+  background: url('../images/gallery/bg.jpg') #17171794;
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
