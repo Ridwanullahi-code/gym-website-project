@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Poppins', san-serif;
+}
+body{
+    max-width: 768px;
+    height: 100vh;
+    background-image: url("../images/gallery/john-arano.jpg");
+    background-color: rgba(0, 0, 0, 0.567);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-blend-mode: multiply;
+}
+main{
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.form-container{
+    width:80vw;
+    background-color: white;
+    padding:20px;
+    display:flex;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    flex-direction: column;
+}
+fieldset{
+    display:flex;
+    gap:10px;
+    flex-direction: column;
+    border:none;
+}
+.input{
+    padding:10px;
+    border:1px solid rgba(128, 128, 128, 0.442);
+    border-radius:6px;
+    
+}
+.checkbox{
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    gap:5px;
+}
+
+.reg-btn{
+    color:white;
+    border: 1px solid rgb(68, 195, 204);
+    background-color: rgb(68, 195, 204);
+}
+
+.reg-btn:hover{
+    opacity: 0.8;
+}
+.reg-btn:active{
+    background-color: rgb(2, 93, 93);
+}
+.login{
+    font-size:12px;
+    text-align: center;
+    margin: 10px 0;
+}
+
+.login a{
+    color: blue;
+    margin-left:6px;
+}
+@media  screen and (min-width:768px) {
+    body{
+        max-width: 100%;
+    }
+    .form-container{
+        width:50vw;
+    }
+}

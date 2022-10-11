@@ -1,0 +1,137 @@
+body {
+    background-image: url("../images/gallery/john-arano.jpg");
+    background-color: rgba(0, 0, 0, 0.567);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-blend-mode: multiply;
+}
+
+main {
+    width: 95vw;
+    height: 90vh;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+.section {
+    display: flex;
+    justify-content: space-between;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.container-1 {
+    display: flex;
+    width: 50vw;
+    height: 70vh;
+    background-color: white;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.icons {
+    display: flex;
+    justify-content: center;
+    gap: 1.2vw;
+}
+
+.icon {
+    border: 1px solid rgb(68, 195, 204);
+    border-radius: 50%;
+    color: black;
+    width: 25px;
+}
+
+.icon:last-child {
+    padding: 5px 5px;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    gap:15px;
+}
+
+.input {
+    width: 36vw;
+    margin: auto;
+    padding:10px;
+}
+.for-pass {
+    color: black;
+    font-size: 12px;
+}
+
+.sign-btn,
+.signup-btn {
+    width: 17vw;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    padding: 7px;
+    color: white;
+    cursor: pointer;
+    border: 1px solid rgb(68, 195, 204);
+    background-color: rgb(68, 195, 204);
+}
+
+.signup-container {
+    width: 50vw;
+    height: 70vh;
+    display: flex;
+    background: rgb(68, 195, 204);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    color: beige;
+}
+
+.signup-container h2 {
+    color: white;
+}
+
+.signup-container p {
+    color: yellow;
+    font-size: 3vw;
+}
+
+.sign-btn {
+    width: 40vw;
+}
+
+.signup-btn {
+    border: 1px solid white;
+    border-radius: 10px;
+    max-width: 20vw;
+    font-size: 2.9vw;
+}
+
+.signup-btn:hover,
+.sign-btn:hover {
+    background-color: rgb(2, 93, 93);
+}
+
+.signup-btn:active,
+.sign-btn:active {
+    background-color: rgb(2, 50, 50);
+}
+
+@media screen and (min-width:768px) {
+    .section {
+        max-width: 60vw;
+    }
+
+    .sign-btn,
+    .input {
+        width: 25vw;
+    }
+
+    .signup-container p {
+        font-size: 15px;
+    }
+
+    .signup-btn {
+        font-size: 20px;
+    }
+}

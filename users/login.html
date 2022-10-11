@@ -6,10 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
-    <link rel="stylesheet" href="./register.css">
     <link rel="stylesheet" href="../css/navbar.css">
+    <link rel="stylesheet" href="./login.css">
     <link rel="stylesheet" href="../css/footer.css">
-    <title>Member Registration</title>
+    <link rel="stylesheet" href="../css/default.css">
+    <title>Member Login</title>
 </head>
 
 <body>
@@ -33,21 +34,29 @@
         </div>
     </header>
     <main>
-        <form action="" class="form-container" method="POST">
-            <fieldset>
-                <input class="input" type="text" placeholder="First Name">
-                <input class="input" type="text" placeholder="Last Name">
-                <input class="input" type="email" placeholder="Email">
-                <input class="input" type="password" placeholder="create password">
-                <input class="input" type="password" placeholder="Confirm password">
-                <div class="checkbox"><input type="checkbox"><span for="check">I accept all terms and conditions</span>
-                </div>
-                <input class="input reg-btn" type="submit" value="Register Now">
-            </fieldset>
-            <div class="login">
-                <p>Already have an account?<a href="./login.html">Login now</a></p>
+        <section class="section">
+            <div class="container-1">
+                 <div class="social-container">
+                     <h2>Sign in</h2>
+                     <ul class="icons">
+                         <li><a href=""><i class="fa-brands fa-facebook-f icon"></i></a></li>
+                         <li><a href=""><i class="fa-brands fa-linkedin-in icon"></i></a></li>
+                         <li><a href=""><i class="fa-brands fa-google-plus-g icon"></i></a></li>
+                     </ul>
+                 </div>
+                 <form action="" class="form">
+                     <input class="input" type="text" name="email" id="" placeholder="User Email">
+                     <input class="input" type="text" name="password" placeholder="Password">
+                     <a href="../users/password.html" class="for-pass">forgot your password</a>
+                     <input class="sign-btn" type="submit" value="SIGN IN">
+                 </form>
             </div>
-        </form>
+            <div class="signup-container container-2">
+                <h2>Sign up</h2>
+                <p>Not yet member?</p>
+                <a href="./password.html" class="signup-btn">SIGN UP</a>
+            </div>
+        </section>
     </main>
     <footer id="about-section">
         <section>
@@ -79,6 +88,9 @@
             </ul>
         </section>
     </footer>
+
     <script src="../js/index.js"></script>
+    </body>
 </body>
+
 </html>

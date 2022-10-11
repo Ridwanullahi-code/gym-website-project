@@ -1,125 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
-
-* {
-  padding: 0;
-  margin: 0;
-  text-decoration: none;
-  list-style: none;
-  box-sizing: border-box;
-  font-family: 'Poppins',Arial, Helvetica, sans-serif;
-}
-
-body {
-  max-width: 760px;
-  height: 100vh;
-}
-
-.navbar-container {
-  display: flex;
-  max-width: 100%;
-  height: 50px;
-  flex-direction: row;
-  justify-content: space-between;
-  padding: 0 5%;
-  align-items: center;
-  background: #1f1f1f;
-  color: white;
-}
-
-.logo {
-  font-size:1.2rem;
-  color: white;
-  font-weight: 700;
-}
-nav {
-  display:flex;
-  justify-content: center;
-  align-items: center;
-  gap: 30px;
-}
-
-nav ul {
-  display: flex;
-  flex-direction: row;
-  gap: 2em;
-}
-
-nav a {
-  color: #ffffff;
-  font-size: 15px;
-  font-weight: bold;
-  text-transform: uppercase;
-}
-
-.menu-button{
-  cursor: pointer;
-  display: none;
-}
-
-.menu-button:active{
-  border: 1px solid white;
-  padding:11px 3px;
-  border-radius:3px;
-}
-
-nav ul{
-  display:none;
-}
-
-.menu-show{
-  position:absolute;
-  top:7%;
-  left:0;
-  right:0;
-  display:block;
-  max-width:100%;
-  background: grey;
-  text-align:center;
-  height: 220px;
-  z-index: 1;
-}
-
-
-nav li {
-  line-height:43px;
-  border-bottom:1px solid white;
-}
-
-.active {
-  color: #b32d19;
-}
-
-nav a:hover {
-  color:#b32d19;
-  transition: all 0.1s ease;
-}
-.hamburger{
-  display: block;
-  cursor: pointer;
-}
-
-.bar{
-  display: block;
-  width:27px;
-  height: 4px;
-  background-color: white;
-  margin: 6px auto;
-}
-
-.hamburger.active .bar:nth-child(1){
-  transform: translateY(12px) rotate(45deg);
-  background-color: white;
-}
-
-.hamburger.active .bar:nth-child(2){
-  opacity: 0;
-}
-
-.hamburger.active .bar:nth-child(3){
-  transform: translateY(-8px) rotate(-45deg);
-  background-color: white;
-}
-
 .welcome {
   background: url('../images/gallery/bg.jpg') #17171794;
   background-repeat: no-repeat;
@@ -219,8 +97,10 @@ div .register-btn {
   text-align: center;
   height: 7vh;
   margin:1rem;
-  width: 50vw;
+  width: 30vw;
+  display: flex;
   align-items: center;
+  justify-content: center;
   color: white;
   font-weight: lighter;
   background-color: #f92302;
@@ -234,6 +114,7 @@ div .register-btn {
   border: 1px solid  #b32d19;
   background-color:#b32d19;
 }
+
 .classes {
   background: #f9f9f9;
   display: flex;
@@ -251,22 +132,24 @@ div .register-btn {
 
 .timetable {
   display: flex;
-  padding: 2em 1em;
-  height: 530px;
-  width: 100vw;
+  padding:2em 1em;
+  justify-content: center;
+  align-items: center;
+  height: 90vh; 
+  width: 100%;
   flex-direction: column;
   border-collapse: collapse;
   overflow-x: auto;
   background-color: black;
 }
-
+ 
 table{
-  width:95%;
+  width:90vw;
   height: 90vh;
 }
 table caption {
   color: white;
-}
+} 
 
 td,
 th {
@@ -361,92 +244,52 @@ iframe {
     opacity: 1;
   }
 }
-
-p.slide-left {
-  animation-delay: 1s;
-}
-
-a.slide-left {
-  animation-delay: 2s;
-}
-
-.btn {
-  animation-delay: 3s;
-}
-
-footer {
-  display: flex;
-  flex-direction: column;
-  background-color: black;
-  height: 200px;
-  padding-top:10px;
-  justify-content: center;
-  text-align: center;
-  color: white;
-  gap:20px;
-}
-
-footer section:first-child{
-  display:flex;
-  flex-direction:row;
-  justify-content:space-around;
-}
-
-address p,a{
-  font-size:11px;
-  line-height:30px;
-  color:rgba(255, 255, 255, 0.791);
-}
-
-.pages-navigation ul{
-  display:block;
-}
-
-.pages-navigation a{
-  color:grey;
-  font-size:12px;
-
-}
-
-footer ul {
-  display: flex;
-  flex-direction: row;
-  gap: 20px;
-  justify-content: center;
-}
-
-.social{
-  border:1px solid grey;
-}
-
-.social h4 {
-  font-size: 20px;
-  font-weight:200;
-}
-
-.social i {
-  color: white;
-}
-
-@media  screen and (min-width:768px) {
-  body{
+@media screen and (min-width:768px) {
+  body {
     max-width: 100%;
     position: relative;
   }
-  nav ul{
+
+  nav ul {
     display: flex;
-   
+
   }
 
-  nav li{
+  nav li {
     border: none;
   }
 
-  .hamburger{
-    display:none;
+  .hamburger {
+    display: none;
   }
-  .welcome{
+
+  .welcome {
     background-position: 100%;
   }
- 
+
+  .class-sec {
+    display: flex;
+  }
+
+  .classes img {
+    max-width: 33.33%;
+  }
+
+  table {
+    width: 80vw;
+  }
+
+  th,
+  td {
+    font-size: 18px;
+  }
+
+  td span {
+    font-size: 12px;
+  }
+
+  .contact {
+    width: 60vw;
+  }
 }
+
