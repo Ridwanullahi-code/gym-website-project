@@ -1,3 +1,5 @@
+/* stylelint-disable */
+
 .welcome {
   background: url('../images/gallery/bg.jpg') #17171794;
   background-repeat: no-repeat;
@@ -9,18 +11,14 @@
   flex-direction: column;
   align-items: center;
   text-align: center;
+  justify-content: center;
   gap: 20px;
 }
 
-.welcome {
- display: flex;
- flex-direction: column;
- justify-content: center;
- align-items: center;
-}
-.summary{
+.summary {
   line-height: 40px;
 }
+
 .summary h1 {
   color: white;
   font-size: 2rem;
@@ -48,9 +46,9 @@
 .learn-more .btn {
   text-align: center;
   align-items: center;
-  padding:0.8em 1.5em;
+  padding: 0.8em 1.5em;
   font-weight: 400;
-  color: #00ff00;
+  color: #0f0;
   border: 1px solid #f92302;
   background: transparent;
   opacity: 0;
@@ -89,14 +87,15 @@
   font-weight: lighter;
   color: rgba(255, 255, 255, 0.881);
 }
-.schedule time{
-  font-size:12px;
+
+.schedule time {
+  font-size: 12px;
 }
 
 div .register-btn {
   text-align: center;
   height: 7vh;
-  margin:1rem;
+  margin: 1rem;
   width: 30vw;
   display: flex;
   align-items: center;
@@ -107,12 +106,13 @@ div .register-btn {
   border: 1px solid  #f92302;
 }
 
-.register-btn:hover{
+.register-btn:hover {
   opacity: 0.9;
 }
-.register-btn:active{
+
+.register-btn:active {
   border: 1px solid  #b32d19;
-  background-color:#b32d19;
+  background-color: #b32d19;
 }
 
 .classes {
@@ -124,32 +124,33 @@ div .register-btn {
   padding: 2rem;
 }
 
-.classes img{
-    max-width:100%;
-    height: auto;
-    padding:12px 12px;
+.classes img {
+  max-width: 100%;
+  height: auto;
+  padding: 12px 12px;
 }
 
 .timetable {
   display: flex;
-  padding:2em 1em;
+  padding: 2em 1em;
   justify-content: center;
   align-items: center;
-  height: 90vh; 
+  height: 90vh;
   width: 100%;
   flex-direction: column;
   border-collapse: collapse;
   overflow-x: auto;
   background-color: black;
 }
- 
-table{
-  width:90vw;
+
+table {
+  width: 90vw;
   height: 90vh;
 }
+
 table caption {
   color: white;
-} 
+}
 
 td,
 th {
@@ -173,7 +174,7 @@ td span {
   font-size: 9px;
 }
 
-.contact{
+.contact {
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -216,17 +217,15 @@ form .btn:active {
   background: black;
 }
 
-.map{
-    text-align:center;
-    margin:24px auto;
-   
-   
+.map {
+  text-align: center;
+  margin: 24px auto;
 }
 
 iframe {
   width: 100%;
   padding: 0 12px;
-  height:300px;
+  height: 300px;
 }
 
 .slide-left {
@@ -244,7 +243,8 @@ iframe {
     opacity: 1;
   }
 }
-@media screen and (min-width:768px) {
+
+@media screen and (min-width: 768px) {
   body {
     max-width: 100%;
     position: relative;
@@ -252,7 +252,6 @@ iframe {
 
   nav ul {
     display: flex;
-
   }
 
   nav li {
@@ -292,4 +291,3 @@ iframe {
     width: 60vw;
   }
 }
-
