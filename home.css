@@ -1,0 +1,295 @@
+.welcome {
+  background: url('../images/gallery/bg.jpg') #17171794;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  background-blend-mode: multiply;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 20px;
+}
+
+.welcome {
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+}
+.summary{
+  line-height: 40px;
+}
+.summary h1 {
+  color: white;
+  font-size: 2rem;
+  font-weight: 700px;
+}
+
+.summary p {
+  color: white;
+  font-weight: lighter;
+}
+
+.learn-more {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  align-items: center;
+}
+
+.learn-more a {
+  color: white;
+  font-size: 1.2rem;
+  opacity: 0;
+}
+
+.learn-more .btn {
+  text-align: center;
+  align-items: center;
+  padding:0.8em 1.5em;
+  font-weight: 400;
+  color: #00ff00;
+  border: 1px solid #f92302;
+  background: transparent;
+  opacity: 0;
+}
+
+.learn-more .btn:hover {
+  background-color: #b32d19;
+  color: white;
+  transition: all 0.5s ease;
+}
+
+.learn-more .btn:active {
+  background-color: #330801;
+}
+
+.schedule {
+  background: #17181a;
+  height: 400px;
+  padding: 50px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.schedule div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 12px;
+  color: white;
+}
+
+.schedule p {
+  font-size: 14px;
+  font-weight: lighter;
+  color: rgba(255, 255, 255, 0.881);
+}
+.schedule time{
+  font-size:12px;
+}
+
+div .register-btn {
+  text-align: center;
+  height: 7vh;
+  margin:1rem;
+  width: 30vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: lighter;
+  background-color: #f92302;
+  border: 1px solid  #f92302;
+}
+
+.register-btn:hover{
+  opacity: 0.9;
+}
+.register-btn:active{
+  border: 1px solid  #b32d19;
+  background-color:#b32d19;
+}
+
+.classes {
+  background: #f9f9f9;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+.classes img{
+    max-width:100%;
+    height: auto;
+    padding:12px 12px;
+}
+
+.timetable {
+  display: flex;
+  padding:2em 1em;
+  justify-content: center;
+  align-items: center;
+  height: 90vh; 
+  width: 100%;
+  flex-direction: column;
+  border-collapse: collapse;
+  overflow-x: auto;
+  background-color: black;
+}
+ 
+table{
+  width:90vw;
+  height: 90vh;
+}
+table caption {
+  color: white;
+} 
+
+td,
+th {
+  padding: 10px;
+  font-size: 12px;
+  text-align: center;
+  color: white;
+  font-weight: lighter;
+}
+
+th {
+  background: #f92302;
+}
+
+td {
+  border: 1px solid rgba(128, 128, 128, 0.156);
+}
+
+td span {
+  color: grey;
+  font-size: 9px;
+}
+
+.contact{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  text-align: center;
+  margin: 24px auto;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 0 48px;
+}
+
+form [name] {
+  outline: none;
+  border: 1px solid grey;
+  padding: 6px;
+  border-radius: 6px;
+}
+
+form input:focus {
+  border: 3px solid #f92302b4;
+}
+
+form .btn {
+  background: rgba(0, 0, 0, 0.827);
+  padding: 8px;
+  color: white;
+  text-align: center;
+  border: 1px solid  rgba(0, 0, 0, 0.787);
+  border-radius: 6px;
+}
+
+form .btn:hover {
+  background: rgba(0, 0, 0, 0.787);
+}
+
+form .btn:active {
+  background: black;
+}
+
+.map{
+    text-align:center;
+    margin:24px auto;
+   
+   
+}
+
+iframe {
+  width: 100%;
+  padding: 0 12px;
+  height:300px;
+}
+
+.slide-left {
+  animation: slideleft 1s linear forwards;
+}
+
+@keyframes slideleft {
+  from {
+    transform: translate(100px);
+    opacity: 0;
+  }
+
+  to {
+    transform: translate(0);
+    opacity: 1;
+  }
+}
+@media screen and (min-width:768px) {
+  body {
+    max-width: 100%;
+    position: relative;
+  }
+
+  nav ul {
+    display: flex;
+
+  }
+
+  nav li {
+    border: none;
+  }
+
+  .hamburger {
+    display: none;
+  }
+
+  .welcome {
+    background-position: 100%;
+  }
+
+  .class-sec {
+    display: flex;
+  }
+
+  .classes img {
+    max-width: 33.33%;
+  }
+
+  table {
+    width: 80vw;
+  }
+
+  th,
+  td {
+    font-size: 18px;
+  }
+
+  td span {
+    font-size: 12px;
+  }
+
+  .contact {
+    width: 60vw;
+  }
+}
+
