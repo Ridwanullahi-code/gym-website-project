@@ -9,7 +9,7 @@ body {
   height: 50px;
   flex-direction: row;
   justify-content: space-between;
-  padding: 0 5%;
+  padding: 2.5% 5%;
   align-items: center;
   background: #1f1f1f;
   color: white;

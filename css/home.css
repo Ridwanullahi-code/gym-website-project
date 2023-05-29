@@ -48,9 +48,9 @@
   align-items: center;
   padding: 0.8em 1.5em;
   font-weight: 400;
-  color: #0f0;
+  color: white;
+  background-color: #f92302;
   border: 1px solid #f92302;
-  background: transparent;
   opacity: 0;
 }
 
@@ -121,9 +121,12 @@ div .register-btn {
   flex-direction: column;
   text-align: center;
   align-items: center;
+  gap:40px;
   padding: 2rem;
 }
-
+.classes h3{
+  font-size: 27px;
+}
 .classes img {
   max-width: 100%;
   height: auto;
@@ -221,12 +224,91 @@ form .btn:active {
   text-align: center;
   margin: 24px auto;
 }
-
+.margin{
+  margin:15px;
+}
 iframe {
   width: 100%;
   padding: 0 12px;
   height: 300px;
 }
+
+/* Footer section */
+
+p.slide-left {
+  animation-delay: 1s;
+}
+
+a.slide-left {
+  animation-delay: 2s;
+}
+
+.btn {
+  animation-delay: 3s;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+  padding-top:30px;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  gap: 20px;
+}
+
+.center{
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  gap:10px;
+}
+footer section:first-child {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+footer p,
+footer a {
+  font-size: 14px;
+  line-height: 30px;
+  color: rgba(255, 255, 255, 0.616);
+}
+
+footer ul {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  justify-content: center;
+}
+
+.pages-navigation ul {
+  display: block;
+}
+
+.social {
+  border-top: 1px solid grey;
+  display: flex;
+  padding:20px 0;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.social h4 {
+  font-size: 23px;
+  font-weight: 200;
+}
+
+.social i {
+  color: white;
+  font-size:25px;
+}
+
 
 .slide-left {
   animation: slideleft 1s linear forwards;

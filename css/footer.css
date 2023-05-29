@@ -22,17 +22,18 @@ footer {
   gap: 20px;
 }
 
+
 footer section:first-child {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
 }
 
-address p,
-a {
-  font-size: 11px;
+footer p,
+footer a {
+  font-size: 15px;
   line-height: 30px;
-  color: rgba(255, 255, 255, 0.791);
+  color: rgba(255, 255, 255, 0.616);
 }
 
 footer ul {
@@ -44,11 +45,6 @@ footer ul {
 
 .pages-navigation ul {
   display: block;
-}
-
-.pages-navigation a {
-  color: grey;
-  font-size: 12px;
 }
 
 .social {
