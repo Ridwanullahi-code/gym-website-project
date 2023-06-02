@@ -1,8 +1,8 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Royal Meals Website
+# Fitness Gym Website
 
-> The functionalities of the website based on giving a customers a list of available foods and provides a way of showing opinion on food through likes and comments. The website built with the HTML, CSS, JavaScript.
+Gym website is allow members to view the gym fitness class schedule, make a booking, and find out what services offered. This project built with HTML, CSS, JavaScript.
 
 ## Built With
 
